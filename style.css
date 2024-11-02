@@ -57,45 +57,52 @@ ul li a:hover {
 span{
   color: #008000;
 }
-/* About Section Styles */
-.about {
+
+.about{
   padding: 20px;
   text-align: center;
+  word-spacing: 4px;
+  line-height: 40px;
+  width: 97%;
+  height: 78vh;
 }
 
+.about h2{
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about p{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* Social Links Styles */
 .social {
   text-align: center;
   margin: 20px 0;
+  font-size: 40px;
 }
 
 .social a {
   margin: 0 10px;
   text-decoration: none;
   color: #ffffff; /* White text for social links */
+  width: 50px;
+  height: auto;
 }
+
 ::-webkit-scrollbar{
   background-color: transparent;
   width: 5px;
 }
+
 ::-webkit-scrollbar-thumb{
   background: white;
   border: 100px;
-}
-
-
-.about{
-  word-spacing: 4px;
-  line-height: 40px;
-
-}
-
-.about h2{
-  font-size: 45px;
-}
-
-.about p{
-  font-size: 20px;
 }
 
 
@@ -107,5 +114,28 @@ span{
 
   .about {
       margin-top: 50px; /* Provide space below h1 for larger screens */
+  }
+  .heading h1 {
+    font-size: 30px; /* Smaller font size for mobile */
+  }
+}
+/* Responsive Navbar for Mobile */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack the navbar items vertically */
+    align-items: flex-start;
+  }
+
+  ul {
+    flex-direction: column; /* Stack the navbar links vertically */
+    align-items: flex-start;
+  }
+
+  ul li {
+    margin: 10px 0; /* Add space between each navbar item */
+  }
+
+  .logo {
+    padding-left: 0;
   }
 }
