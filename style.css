@@ -21,6 +21,7 @@ body {
 .logo{
   width: 90px;
   height: auto;
+  padding-left: 45px;
 }
 
 ul {
@@ -81,6 +82,23 @@ span{
   background: white;
   border: 100px;
 }
+
+
+.about{
+  word-spacing: 4px;
+  line-height: 40px;
+
+}
+
+.about h2{
+  font-size: 45px;
+}
+
+.about p{
+  font-size: 20px;
+}
+
+
 /* Make the h1 visible initially */
 @media screen and (min-width: 768px) {
   .main {
