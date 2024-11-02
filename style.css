@@ -1,0 +1,93 @@
+/* style.css */
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212; /* Dark background color */
+  color: #ffffff; /* White text for better contrast */
+  scroll-snap-type: y mandatory;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.logo{
+  width: 90px;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+ul li {
+  margin: 0 15px; /* Space between navbar items */
+}
+
+ul li a {
+  text-decoration: none;
+  color: #ffffff; /* White text for links */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+ul li a:hover {
+  color: #e91e63; /* Change link color on hover */
+}
+.heading{
+  width: 100%;
+  height: 78vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading h1{
+  font-size: 60px;
+}
+span{
+  color: #008000;
+}
+/* About Section Styles */
+.about {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Social Links Styles */
+.social {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.social a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffffff; /* White text for social links */
+}
+::-webkit-scrollbar{
+  background-color: transparent;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb{
+  background: white;
+  border: 100px;
+}
+/* Make the h1 visible initially */
+@media screen and (min-width: 768px) {
+  .main {
+      justify-content: flex-start; /* Align content to the start on larger screens */
+  }
+
+  .about {
+      margin-top: 50px; /* Provide space below h1 for larger screens */
+  }
+}
