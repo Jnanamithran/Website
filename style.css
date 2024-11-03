@@ -1,15 +1,27 @@
 /* style.css */
+body.light-mode{
+  --text-color : #121212;
+  --background-color : rgb(255, 255, 255);
+  --hover-color : red;
+  --span-color : red; 
+}
+body.dark-mode{
+  --text-color : rgb(255, 255, 255);
+  --background-color : #121212;
+  --hover-color : red;
+  --span-color : red;
+}
 
 /* Global Styles */
 body {
-  background-color: #121212; /* Dark background color */
-  color: #ffffff; /* White text for better contrast */
+  background-color: var(--background-color); /* Dark background color */
+  color: var(--background-color); /* White text for better contrast */
   scroll-snap-type: y mandatory;
   min-height: 100vh;
 }
 
 nav{
-  background-color: #121212;
+  background-color: var(--background-color);
 }
 nav ul{
   list-style: none;
@@ -28,22 +40,26 @@ nav a{
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: white;
+  color: var(--text-color);
 }
 nav a:hover{
-  color: yellow;
+  color: var(--hover-color);
 }
 
 nav a:active{
-  color: yellow;
+  color: var(--hover-color);
 }
 nav li:first-child{
+  margin-right: auto;
+}
+nav li:nth-child(2){
   margin-right: auto;
 }
 .logo{
   width: 90px;
   height: auto;
   padding-left: 45px;
+  padding-top: 16px;
 }
 
 .sidebar{
@@ -53,7 +69,7 @@ nav li:first-child{
   height: 100vh;
   width: 250px;
   z-index: 999;
-  background-color: #121212;
+  background-color: var(--background-color);
   backdrop-filter: blur(10px);
   display: none;
   flex-direction: column;
@@ -72,16 +88,17 @@ nav li:first-child{
 }
 .heading{
   width: 100%;
-  height: 78vh;
+  height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--text-color);
 }
 .heading h1{
   font-size: 60px;
 }
 span{
-  color: yellow;
+  color: var(--span-color);
 }
 
 .about{
@@ -91,6 +108,7 @@ span{
   line-height: 40px;
   width: 97%;
   height: 78vh;
+  color: var(--text-color);
 }
 
 .about h2{
@@ -114,12 +132,13 @@ span{
   font-size: 40px;
   width: 100%;
   height: 78vh;
+  color: var(--text-color);
 }
 
 .social a {
   margin: 0 10px;
   text-decoration: none;
-  color: #ffffff; /* White text for social links */
+  color: var(--text-color); /* White text for social links */
   width: 50px;
   height: auto;
 }
@@ -130,8 +149,8 @@ span{
 }
 
 ::-webkit-scrollbar-thumb{
-  background: white;
-  border: 100px;
+  background: var(--text-color);
+  border : 100px;
 }
 
 
@@ -151,6 +170,13 @@ span{
 
   .logo {
     padding-left: 0;
+  }
+
+  nav li:first-child{
+    margin-right: auto;
+  }
+  nav li:nth-child(2){
+    margin-right: auto;
   }
 
   .heading h1 {
