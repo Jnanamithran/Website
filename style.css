@@ -2,47 +2,73 @@
 
 /* Global Styles */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
   background-color: #121212; /* Dark background color */
   color: #ffffff; /* White text for better contrast */
   scroll-snap-type: y mandatory;
+  min-height: 100vh;
 }
 
-/* Navbar Styles */
-.navbar {
+nav{
+  background-color: #121212;
+}
+nav ul{
+  list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding: 20px;
-  font-size: 18px;
 }
 
+nav li{
+  height: 50px;
+
+}
+nav a{
+  height: 100%;
+  padding: 0 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+nav a:hover{
+  color: yellow;
+}
+
+nav a:active{
+  color: yellow;
+}
+nav li:first-child{
+  margin-right: auto;
+}
 .logo{
   width: 90px;
   height: auto;
   padding-left: 45px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: #121212;
+  backdrop-filter: blur(10px);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
+.sidebar li{
+  width: 100%;
 
-ul li {
-  margin: 0 15px; /* Space between navbar items */
 }
-
-ul li a {
-  text-decoration: none;
-  color: #ffffff; /* White text for links */
-  transition: color 0.3s; /* Smooth color transition */
+.sidebar a{
+  width: 100%;
 }
-
-ul li a:hover {
-  color: #e91e63; /* Change link color on hover */
+.menu-button{
+  display: none;
 }
 .heading{
   width: 100%;
@@ -55,7 +81,7 @@ ul li a:hover {
   font-size: 60px;
 }
 span{
-  color: #008000;
+  color: yellow;
 }
 
 .about{
@@ -80,11 +106,14 @@ span{
   align-items: center;
   justify-content: center;
 }
+
 /* Social Links Styles */
 .social {
   text-align: center;
   margin: 20px 0;
   font-size: 40px;
+  width: 100%;
+  height: 78vh;
 }
 
 .social a {
@@ -115,27 +144,22 @@ span{
   .about {
       margin-top: 50px; /* Provide space below h1 for larger screens */
   }
-  .heading h1 {
-    font-size: 30px; /* Smaller font size for mobile */
-  }
+
 }
 /* Responsive Navbar for Mobile */
 @media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column; /* Stack the navbar items vertically */
-    align-items: flex-start;
-  }
-
-  ul {
-    flex-direction: column; /* Stack the navbar links vertically */
-    align-items: flex-start;
-  }
-
-  ul li {
-    margin: 10px 0; /* Add space between each navbar item */
-  }
 
   .logo {
     padding-left: 0;
+  }
+
+  .heading h1 {
+    font-size: 35px; /* Correct font size for mobile */
+  }
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
   }
 }
