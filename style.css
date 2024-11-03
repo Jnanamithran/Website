@@ -174,9 +174,11 @@ span{
 
   nav li:first-child{
     margin-right: auto;
+    display: block;
   }
   nav li:nth-child(2){
     margin-right: auto;
+    display: none;
   }
 
   .heading h1 {
