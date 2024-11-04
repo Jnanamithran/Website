@@ -188,6 +188,20 @@ span{
   background: var(--text-color);
   border : 100px;
 }
+.darkModeButton {
+  display: block; /* Visible by default */
+}
+
+.whiteModeButton {
+  display: none; /* Hidden by default */
+}
+.darkModeButtons {
+  display: block; /* Visible by default */
+}
+
+.whiteModeButtons {
+  display: none; /* Hidden by default */
+}
 
 
 /* Make the h1 visible initially */
