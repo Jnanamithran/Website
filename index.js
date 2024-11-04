@@ -39,6 +39,7 @@ window.onload = function() {
     if (colorMode === 'dark') {
         darkModeOn(); // Apply dark mode if saved
     } else {
-        whiteModeOn(); // Default to light mode
+        whiteModeOn(); // Default to light mode if not saved
+        localStorage.setItem('colorMode', 'light'); // Set light mode as the initial default for first-time users
     }
-}
+};
