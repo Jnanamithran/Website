@@ -43,3 +43,7 @@ window.onload = function() {
         whiteModeOn(); // Default to light mode
     }
 };
+/*var loader = document.getElementById("preloader");
+window.addEventListener("load",function(){
+    loader.style.display = "none";
+})*/
