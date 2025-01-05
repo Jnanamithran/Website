@@ -43,7 +43,9 @@ window.onload = function() {
         whiteModeOn(); // Default to light mode
     }
 };
-/*var loader = document.getElementById("preloader");
+var loader = document.getElementById("pre-loader");
 window.addEventListener("load",function(){
-    loader.style.display = "none";
-})*/
+    this.setTimeout(function(){
+        loader.style.display ="none";
+    },1500);
+});

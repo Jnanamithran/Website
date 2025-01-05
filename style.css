@@ -260,3 +260,11 @@ video {
     height: 20px;
   }
 }
+.pre-loader{
+  background: #121212 url(./images/logos.gif) no-repeat center center;
+  background-size: 10%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
