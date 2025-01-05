@@ -14,7 +14,7 @@ body.dark-mode{
 
 /* Global Styles */
 body {
-  background-color: var(--background-color); /* Dark background color */
+  background-image: image(); /* Dark background color */
   color: var(--background-color); /* White text for better contrast */
   scroll-snap-type: y mandatory;
   min-height: 100vh;
@@ -22,7 +22,7 @@ body {
 }
 
 nav{
-  background-color: var(--background-color);
+  background-color: transparent;
 }
 nav ul{
   list-style: none;
@@ -202,8 +202,21 @@ span{
 .whiteModeButtons {
   display: none; /* Hidden by default */
 }
-
-
+.contact {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 105%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Ensure the video is behind the content */
+}
 /* Make the h1 visible initially */
 @media screen and (min-width: 768px) {
   .main {
