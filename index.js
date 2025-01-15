@@ -34,7 +34,7 @@ function whiteModeOn() {
 }
 
 // Load preferred color mode on page load
-window.onload = function() {
+/*window.onload = function() {
     const colorMode = localStorage.getItem('colorMode');
 
     if (colorMode === 'dark') {
@@ -48,4 +48,4 @@ window.addEventListener("load",function(){
     this.setTimeout(function(){
         loader.style.display ="none";
     },1500);
-});
+});*/
