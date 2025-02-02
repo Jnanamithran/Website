@@ -1,92 +1,52 @@
-/* style.css */
-body {
-  --text-color: #ffffff;
-  --background-color: rgb(0, 0, 0);
-  --hover-color: red;
-  --span-color: red; 
+body{
+    background-color: black;
+    overflow-y: hidden;
+    height: 100vh;
+}
+.navigation {
+    display: inline-block;
+    height: 100vh;
+    align-content: center;
+    
+}
+.navigation ul li  {
+    list-style: none;
+    margin-top: 50px;
+}
+.navigation ul li a {
+    text-decoration: none;
+    font-size: 35px;
+    color: white;
 }
 
-/* Global Styles */
-body {
-  background-color: var(--background-color);
-  overflow-x: hidden;
+.vl {
+    border-left: 5px solid #163839;
+    height: 500px;
+    border-radius: 10px;
+    margin-left: 175px;
 }
-
-nav {
-  display: flex;
-  padding-right: 20px;
-  width: 100%;
+.me {
+    width: 390px;
+    height: auto;
+    margin-left: 158px;
 }
-
-nav ul li {
-  list-style: none;
+.heading{
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
-
-nav a {
-  padding: 10px;
-  text-decoration: none;
-  color: var(--text-color);
-  padding-right: 20px;
-}
-nav img {
-  float: left;
-  width: 90px;
-  margin-top: -40px;
-}
-nav a:hover, nav a:active {
-  color: var(--hover-color);
-}
-
-.heading {
-  width: 100%;
-  height: calc(100vh - 60px); /* Full height minus the navbar height */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-color);
-  position: relative; /* Ensure the container stays in the viewport */
-}
-
 .heading h1 {
-  font-size: 60px;
-  position: relative; /* Keep the h1 itself positioned normally */
-  margin: 0;
-  white-space: nowrap; /* Prevent text wrapping */
+    font-size: 40px;
+    color: white;
+    margin-left: 13%;
 }
-
-.fixed-text {
-  position: fixed; /* Fix the "I am" text */
-  left: 50%; /* Center horizontally */ /* Center vertically */
-}
-
-.auto-type {
-  color: var(--span-color);
-  position: fixed; /* Position the dynamically typed text next to "I am" */
-  padding-left: 110px; /* Space between "I am" and the typed text */
-}
-
-
-::-webkit-scrollbar {
-  background-color: transparent;
-  width: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--text-color);
-}
-
 /* Responsive Navbar for Mobile */
 @media screen and (max-width: 768px) {
-  body {
-    overflow: hidden;
-  }
-
-  .logo {
-    padding-left: 0;
-  }
-
-  .heading h1 {
-    font-size: 35px;
-  }
+    body {
+        overflow: hidden;
+    }    
+    .heading h1 {
+        font-size: 35px;
+    }
 
 }
