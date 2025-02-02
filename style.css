@@ -1,7 +1,7 @@
 /* style.css */
 body {
-  --text-color: #000000;
-  --background-color: rgb(241, 241, 241);
+  --text-color: #ffffff;
+  --background-color: rgb(0, 0, 0);
   --hover-color: red;
   --span-color: red; 
 }
@@ -9,18 +9,16 @@ body {
 /* Global Styles */
 body {
   background-color: var(--background-color);
-  scroll-snap-type: y mandatory;
   overflow-x: hidden;
 }
+
 nav {
-  text-align: right;
+  display: flex;
   padding-right: 20px;
-  position: fixed;
   width: 100%;
 }
 
 nav ul li {
-  display: inline;
   list-style: none;
 }
 
@@ -32,58 +30,41 @@ nav a {
 }
 nav img {
   float: left;
+  width: 90px;
+  margin-top: -40px;
 }
 nav a:hover, nav a:active {
   color: var(--hover-color);
 }
 
-.logo {
-  width: 90px;
-  height: auto;
-  padding-left: 45px;
-}
-
 .heading {
   width: 100%;
-  height: 85vh;
+  height: calc(100vh - 60px); /* Full height minus the navbar height */
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--text-color);
+  position: relative; /* Ensure the container stays in the viewport */
 }
 
 .heading h1 {
   font-size: 60px;
+  position: relative; /* Keep the h1 itself positioned normally */
+  margin: 0;
+  white-space: nowrap; /* Prevent text wrapping */
 }
 
-span {
+.fixed-text {
+  position: fixed; /* Fix the "I am" text */
+  left: 50%; /* Center horizontally */ /* Center vertically */
+}
+
+.auto-type {
   color: var(--span-color);
+  position: fixed; /* Position the dynamically typed text next to "I am" */
+  padding-left: 110px; /* Space between "I am" and the typed text */
 }
 
-.about {
-  padding: 20px;
-  text-align: center;
-  word-spacing: 4px;
-  line-height: 40px;
-  width: 97%;
-  height: 78vh;
-  color: var(--text-color);
-}
-
-.about h2 {
-  font-size: 35px;
-}
-
-.about p {
-  font-size: 20px;
-}
-
-.works {
-  color: var(--text-color);
-  display: grid;
-  justify-content: center;
-  align-items: center;
-}
 
 ::-webkit-scrollbar {
   background-color: transparent;
@@ -92,12 +73,6 @@ span {
 
 ::-webkit-scrollbar-thumb {
   background: var(--text-color);
-}
-
-.contact {
-  color: whitesmoke;
-  display: flex;
-  justify-content: center;
 }
 
 /* Responsive Navbar for Mobile */
@@ -110,15 +85,8 @@ span {
     padding-left: 0;
   }
 
-  .about {
-    display: block;
-  }
-
   .heading h1 {
     font-size: 35px;
   }
 
-  .menu-button {
-    display: block;
-  }
 }
