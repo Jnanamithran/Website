@@ -11,19 +11,22 @@ body{
 }
 .navigation ul li  {
     list-style: none;
-    margin-top: 50px;
+    padding: 28px 28px;
 }
 .navigation ul li a {
     text-decoration: none;
     font-size: 35px;
     color: white;
 }
-
+.navigation ul li a:hover {
+    text-shadow: 12px 2px 20px #ffffff;
+    transition: 0.5s;
+}
 .vl {
-    border-left: 5px solid #163839;
+    border-left: 5px solid #fff;
     height: 500px;
     border-radius: 10px;
-    margin-left: 175px;
+    margin-left: 165px;
 }
 .me {
     width: 390px;
@@ -39,6 +42,125 @@ body{
     font-size: 40px;
     color: white;
     margin-left: 13%;
+}
+.about {
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+}
+.about h3 {
+    font-size: 40px;
+    color: white;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+.about p {
+    font-size: 15px;
+    color: white;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+.skills {
+    display: flex;
+    text-align: left;
+    align-items: center;
+
+}
+.skills h3 {
+    font-size: 40px;
+    color: white;
+    margin-left: 17%;
+}
+
+.skills ul li {
+    font-size: 13px;
+    color: white;
+    margin-left: 15%;
+}
+.skills ul h5 {
+    font-size: 15px;
+    color: white;
+    margin-left: 15%;
+}
+.projects {
+    display: flex;
+    text-align: left;
+    width: 100%;
+
+}
+.projects h3 {
+    font-size: 40px;
+    color: white;
+    margin-left: 17%;
+}
+
+.projects ul li {
+    font-size: 13px;
+    color: white;
+    margin-left: 15%;
+}
+.projects ul li a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    line-height: 25px;
+}
+/* Style for the popup */
+.popup-cortex {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 70%;
+    background-color: #6d6d6d;
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+} 
+.popup-cortex h5{
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+}
+.popup-cortex p{
+    font-size: 13px;
+    color: black;
+    margin-left: 10px;
+}
+.popup-cortex img{
+    position: absolute;
+    margin-left: 105%;
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+}
+.popup-orbit {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 70%;
+    background-color: #6d6d6d;
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+} 
+.popup-orbit h5{
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+}
+.popup-orbit p{
+    font-size: 13px;
+    color: black;
+    margin-left: 10px;
+}
+.popup-orbit img{
+    position: absolute;
+    margin-left: 105%;
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
 }
 /* Responsive Navbar for Mobile */
 @media screen and (max-width: 768px) {
