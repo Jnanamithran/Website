@@ -9,6 +9,7 @@
     border-radius: 100px;
   }
 
+
 .navbar{
     text-align: right;
     padding-right: 40px;
@@ -21,7 +22,12 @@
 
 .navbar ul li a{
     text-decoration: none; 
-    color: #000000;   
+    color: #000000;
+    font-size: 20px; 
+}
+
+.navbar ul li a:hover{
+    text-shadow: 2px 2px 5px #000000;
 }
 .heading{
     height: 95vh;
