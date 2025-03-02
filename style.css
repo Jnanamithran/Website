@@ -108,8 +108,13 @@ body{
     .heading{
         font-size: small;
     }
-    .about img{
-        height: 90px;
+    .about {
+        display: block;
+
+    }
+    .about h1{
+        font-size: 24px;
+        text-align: center;
     }
     .about p{
         padding-left: 0%;
