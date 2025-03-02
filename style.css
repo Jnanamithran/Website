@@ -5,20 +5,17 @@
   }
   
   ::-webkit-scrollbar-thumb {
-    background: #000000;
+    background: #7aceec;
     border-radius: 100px;
   }
 
-body{
-    background-image: url(./images/background.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-.navbar{
+
+  .navbar{
     text-align: right;
     padding-right: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navbar ul li{
@@ -47,6 +44,9 @@ body{
     align-items: center;
     justify-content: center;
     font-size: larger;
+    background-image: url(./images/background.jpeg);    
+    background-size: cover;
+    padding: 0%;
 }
 
 .heading h1{
@@ -62,7 +62,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 300px;
+
 }
 
 .about h1{
@@ -77,10 +77,43 @@ body{
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+    color: black;
 
 }
+.work {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+}
+.work h1{
+    font-size: 50px;
+    font-family: "Nothing You Could Do", cursive;
+    color: #7aceec ;
+    float: left;
+}
+
+.work2{
+    display: block;
+    margin-left: 200px;
+}
+
+.work2 h3{
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    color: black;
+    font-size: 22px;
+}
+.work2 ul li {
+    list-style-type: none;
+    line-height: 25px;
+}
+.work2 ul li a{
+    text-decoration: none;
+    color: black;
+}
+
 .social {
     display: flex;
     justify-content: center;
@@ -92,8 +125,7 @@ body{
     align-items: center;
     text-decoration: none;
     padding: 10px;
-    color: white;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
+    color: black;
 
 }
 
