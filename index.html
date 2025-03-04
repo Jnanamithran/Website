@@ -5,21 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jnanamithran M</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Nothing+You+Could+Do&family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar">
-    <ul>
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#social">Social</a></li>
-      <li><a href="#work">Works</a></li>
-    </ul>
-  </nav>
+  <video autoplay muted loop id="myVideo">
+    <source src="./images/background.mp4" type="video/mp4">
+  </video>
+<audio id="backgroundMusic" loop>
+  <source src="./images/indian-ocean-sound-from-zanzibar-at-sunrise-190466.mp3" type="audio/mp3">
+</audio>
+<audio id="backgroundMusic" loop>
+  <source src="./images/indian-ocean-sound-from-zanzibar-at-sunrise-190466.mp3" type="audio/mp3">
+</audio>
+
+<!-- This is the 'Sound Off' button (Muted) -->
+<button id="soundOff" class="sound-btn hidden">
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-volume-mute-fill" viewBox="0 0 16 16">
+    <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06m7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0"/>
+</svg>
+</button>
+
+<!-- This is the 'Sound On' button (Playing) -->
+<button id="soundOn" class="sound-btn">
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+    <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+    <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+    <path d="M8.707 11.182A4.5 4.5 0 0 0 10.025 8a4.5 4.5 0 0 0-1.318-3.182L8 5.525A3.5 3.5 0 0 1 9.025 8 3.5 3.5 0 0 1 8 10.475zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06"/>
+</svg>
+</button>
+  <button id="openNav" class="nav-btn"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+  </svg></button>
+  <div id="navContainer" class="nav-overlay">
+    <div id="sideNav" class="side-nav">
+      <button id="closeNav" class="close-btn"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+      </svg></button>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#social">Social</a></li>
+        <li><a href="#work">Works</a></li>
+      </ul>
+    </div>
+  </div>   
   <div class="heading">
-    <h1>I am Jnanamithran M.</h1>
+    <h1>I'm <br> Jnanamithran M.</h1>
   </div>
   <div id="about" class="about">
     <h1>About ME</h1>
